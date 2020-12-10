@@ -14,7 +14,6 @@ struct GameType {
 };
 
 
-
 // creates and returns a random number when called
 // Pre: none
 // Post: returns a random number
@@ -50,6 +49,4 @@ int main() {
 		InterprestGuesses();
 	// while game is not over
 	// while all ships are not hits
-		
-	
 }
