@@ -48,6 +48,5 @@ int main() {
 		PrintBattleField();
 		PromptGuesses();
 		InterprestGuesses();
-	// while game is not over
-	// while all ships are not hits
+	// while all ships are not hits and while user is still playing
 }
