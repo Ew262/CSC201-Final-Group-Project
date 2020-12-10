@@ -1,4 +1,4 @@
-enum?
+enum orientation = {horizontal, vertical};
 
 struct PositionType {
 	int row;
@@ -44,6 +44,9 @@ void PromptGuesses()
 // Pre: two valids
 // Post: returns wether a ship is hit or missed
 bool InterperetGuesses(/* INOUT */ int& array[], GameType &shipLocations, int, int)
+
+// for making sure ships don't overlap
+void CollisonCheck
  
 void InitBattlefield(/* INOUT */ int& array[], int, int, bool)
 
@@ -57,5 +60,5 @@ int main() {
 		PrintBattleField();
 		PromptGuesses();
 		InterprestGuesses();
-	// while all ships are not hits and while user is still playing
+	// while all ships are not hits and while user is still wants to play
 }
