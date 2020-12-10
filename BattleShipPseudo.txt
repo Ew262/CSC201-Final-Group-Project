@@ -1,0 +1,38 @@
+// creates and returns a random number when called
+// Pre: none
+// Post: returns a random number
+int RandNumGen()
+
+// prints rules to screen
+// Pre: none
+// Post: prints game rules to screen
+void PrintRules()
+
+// prints updated battleship to screen
+// Pre: valid const int array
+// Post: returns formatted 
+void PrintBattlefield(/* IN */ const int array[])
+
+// prompts user and interperests guesses 
+void PromptGuesses()
+
+// interperets guesses 
+void InterperetGuesses()
+ 
+void InitBattlefield(/* INOUT */ int& array[], int, int)
+
+const int MAX_SIZE = 10;
+int main() {
+	int gameArry[MAX_SIZE][MAX_SIZE];
+	
+	PrintRules()
+	// while loop
+		InitBattle();
+		PrintBattleField();
+		PromptGuesses();
+		InterprestGuesses();
+	// while game is not over
+	// while all ships are not hits
+		
+	
+}
