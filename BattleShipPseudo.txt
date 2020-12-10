@@ -1,3 +1,10 @@
+enum?
+
+struct PositionType {
+	int row;
+	int col;
+};
+
 struct ShipType {
 	char[5] carrier; // vertical
 	char[4] battleship; // horizontal
@@ -11,6 +18,7 @@ const int MAX_SIZE = 10;
 struct GameType {
 	char gameArry[MAX_SIZE][MAX_SIZE];
 	ShipType ship;
+	PositionType position;
 };
 
 // creates and returns a random number when called
