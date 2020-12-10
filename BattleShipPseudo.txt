@@ -13,10 +13,11 @@ struct ShipType {
 	char[2] destroyer; // vertical
 };
 
-const int MAX_SIZE = 10;
+const int MAX_SIZE = 8;
 
 struct GameType {
 	char gameArry[MAX_SIZE][MAX_SIZE];
+	char shipLocations[MAX_SIZE][MAX_SIZE];
 	ShipType ship;
 	PositionType position;
 };
@@ -42,7 +43,7 @@ void PromptGuesses()
 // interperets guesses 
 // Pre: two valids
 // Post: returns wether a ship is hit or missed
-bool InterperetGuesses(int, int)
+bool InterperetGuesses(/* INOUT */ int& array[], GameType &shipLocations, int, int)
  
 void InitBattlefield(/* INOUT */ int& array[], int, int, bool)
 
