@@ -16,7 +16,7 @@ struct ShipType {
 const int MAX_SIZE = 8;
 
 struct GameType {
-	char gameArry[MAX_SIZE][MAX_SIZE];
+	char gridArray[MAX_SIZE][MAX_SIZE];
 	char shipLocations[MAX_SIZE][MAX_SIZE];
 	ShipType ship;
 	PositionType position;
@@ -32,27 +32,38 @@ int RandNumGen()
 // Post: prints game rules to screen
 void PrintRules()
 
+// Initializes battlefield
+// Pre: valid gridArray GameType
+//	valid shipLocations GameType
+// Post: returns GameType 2D array
+GameType InitBattlefield(/* INOUT */ GameType &gridArray[][MAX_SIZE], GameType &shipLocations[][MAX_SIZE])
+
 // prints updated battleship to screen
 // Pre: valid const int array
 // Post: returns formatted 
 void PrintBattlefield(/* IN */ const int array[])
 
-// prompts user and interperests guesses 
-void PromptGuesses()
+// prompts user for guess
+// Pre: valid x int
+//	valid y int
+// Post: prompts and returns user input
+void PromptGuesses(int &x, int &y);
 
 // interperets guesses 
-// Pre: two valids
-// Post: returns wether a ship is hit or missed
-bool InterpretGuesses(/* INOUT */ int& array[], GameType &shipLocations, int, int)
+// Pre: valid gridArray GameType
+//      valid shipLocations GameType
+//      valid x int
+//      valid y int
+// Post: returns wether a ship is hit missed
+//       and changes board with each input
+bool InterpretGuesses(/* INOUT */ const GameType gridArray[][MAX_SIZE], const GameType shipLocations[][MAX_SIZE], int x, int y)
 
 // for making sure ships don't overlap
-void CollisonCheck
+// Pre:
+void CollisonCheck(const GameType shipLocations[][MAX_SIZE])
  
-void InitBattlefield(/* INOUT */ int& array[], int, int, bool)
-
-
 int main() {
-	GameType gameArry[][];
+	GameType gameArray[][];
 	
 	PrintRules()
 	InitBattle();
