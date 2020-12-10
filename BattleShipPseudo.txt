@@ -43,7 +43,7 @@ void PromptGuesses()
 // interperets guesses 
 // Pre: two valids
 // Post: returns wether a ship is hit or missed
-bool InterperetGuesses(/* INOUT */ int& array[], GameType &shipLocations, int, int)
+bool InterpretGuesses(/* INOUT */ int& array[], GameType &shipLocations, int, int)
 
 // for making sure ships don't overlap
 void CollisonCheck
@@ -55,10 +55,11 @@ int main() {
 	GameType gameArry[][];
 	
 	PrintRules()
+	InitBattle();
+	
 	// while loop
-		InitBattle();
 		PrintBattleField();
 		PromptGuesses();
-		InterprestGuesses();
+		InterpretGuesses();
 	// while all ships are not hits and while user is still wants to play
 }
