@@ -1,15 +1,15 @@
 struct ShipType {
-char[5] carrier; // vertical
-char[4] battleship; // horizontal
-char[3] cruiser; // vertical
-char[3] submarine; // horizontal
-char[2] destroyer; // vertical
+	char[5] carrier; // vertical
+	char[4] battleship; // horizontal
+	char[3] cruiser; // vertical
+	char[3] submarine; // horizontal
+	char[2] destroyer; // vertical
 };
 
 const int MAX_SIZE = 10;
 
 struct GameType {
-	int gameArry[MAX_SIZE][MAX_SIZE];
+	char gameArry[MAX_SIZE][MAX_SIZE];
 	ShipType ship;
 };
 
