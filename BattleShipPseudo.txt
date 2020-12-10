@@ -1,3 +1,20 @@
+struct ShipType {
+char[5] carrier; // vertical
+char[4] battleship; // horizontal
+char[3] cruiser; // vertical
+char[3] submarine; // horizontal
+char[2] destroyer; // vertical
+};
+
+const int MAX_SIZE = 10;
+
+struct GameType {
+	int gameArry[MAX_SIZE][MAX_SIZE];
+	ShipType ship;
+};
+
+
+
 // creates and returns a random number when called
 // Pre: none
 // Post: returns a random number
@@ -21,9 +38,9 @@ void InterperetGuesses()
  
 void InitBattlefield(/* INOUT */ int& array[], int, int)
 
-const int MAX_SIZE = 10;
+
 int main() {
-	int gameArry[MAX_SIZE][MAX_SIZE];
+	GameType gameArry[][];
 	
 	PrintRules()
 	// while loop
