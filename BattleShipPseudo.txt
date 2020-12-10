@@ -13,7 +13,6 @@ struct GameType {
 	ShipType ship;
 };
 
-
 // creates and returns a random number when called
 // Pre: none
 // Post: returns a random number
@@ -33,9 +32,11 @@ void PrintBattlefield(/* IN */ const int array[])
 void PromptGuesses()
 
 // interperets guesses 
-void InterperetGuesses()
+// Pre: two valids
+// Post: returns wether a ship is hit or missed
+bool InterperetGuesses(int, int)
  
-void InitBattlefield(/* INOUT */ int& array[], int, int)
+void InitBattlefield(/* INOUT */ int& array[], int, int, bool)
 
 
 int main() {
